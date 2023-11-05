@@ -3,28 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danton Logo</title>
+    <title>Under Construction</title>
     <style>
         body {
-            background-color: #F5F5F5;
+            background-color: #1a1a1a;
+            color: #fff;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
+            font-family: 'Arial', sans-serif;
         }
 
         .logo {
-            font-family: 'Arial', sans-serif;
             font-size: 60px;
             font-weight: bold;
-            color: #333;
             text-transform: uppercase;
-            text-shadow: 2px 2px 4px #888;
+            animation: glow 2s infinite alternate;
+        }
+
+        .message {
+            font-size: 20px;
+            text-align: center;
+            max-width: 80%;
+            margin-top: 20px;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        input[type="email"]::placeholder {
+            color: #ccc;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #fff;
+            }
+            100% {
+                text-shadow: 0 0 20px #00f;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="logo">Dan</div>
+        <p class="message">
+        Thanks for visiting us. <br> We are still under construction.<br>Your time is much appreciated.
+    </p>
+    <label for="email">Please enter your best email:</label>
+    <input type="email" id="email" placeholder="your@email.com">
+    <p></p><div class="logo">Dan</div>
 </body>
 </html>
